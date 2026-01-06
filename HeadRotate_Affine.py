@@ -46,7 +46,7 @@ class AffineCorrector:
         # 解决负号显示问题（可选）
         plt.rcParams['axes.unicode_minus'] = False  
 
-        template_path = r".\scct.nii"           # 模板NIfTI文件
+        template_path = r".\utils\scct.nii"           # 模板NIfTI文件
         self.fixed = ants.image_read(template_path)
 
     def load_dicom_series(self, directory):
