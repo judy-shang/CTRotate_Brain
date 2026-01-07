@@ -1,0 +1,16 @@
+ants==0.0.7
+matplotlib==3.10.8
+nilearn==0.13.0
+numpy==2.4.0
+openpyxl==3.1.5
+pandas==2.3.3
+pydicom==3.0.1
+PyQt5==5.15.11
+PyQt5_sip==12.13.0
+scikit_learn==1.8.0
+scipy==1.16.3
+simpleitk==2.5.2
+skimage==0.0
+torch==2.5.1
+torch==2.9.1
+torchmetrics==1.4.0.post0
