@@ -256,9 +256,10 @@ class CorrectionWorker(QThread):
                     try:
                         ds = dicom.dcmread(file_path)
                         # skip uAI result
-                        station_name = getattr(ds, 'StationName')
-                        if (station_name == 'UII_AI'):
-                            break
+                        if 'StationName' in ds:
+                            station_name = getattr(ds, 'StationName')
+                            if (station_name == 'UII_AI'):
+                                break
                         slice_thickness = float(getattr(ds, 'SliceThickness', 0))
                         
                         file_info = {
